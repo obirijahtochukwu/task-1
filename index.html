@@ -16,7 +16,7 @@
   <body>
     <header class="container mt-5 mb-4">
       <div class="row">
-        <div class="col-sm-8 col-md-7 mx-auto">
+        <div class="col-sm-8 col-md-7 col-lg-6 mx-auto">
           <div class="bg-white rounded p-2">
             <div class="d-flex justify-content-between align-items-center">
               <div style="font-size: 1.2rem; font-weight: 700">About <img src="icons8-heart-24.png"/> Love</div>
@@ -58,7 +58,10 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-6 col-sm-8 col-md-9 col-lg-8 mx-auto rounded p-1 my-4 text-center text-white" style="font-size: 1.5rem; font-weight: 600; background: black">
+        <div class="col-6 col-sm-8 d-none d-sm-flex col-md-6 col-lg-8 mx-auto rounded p-1 my-4 text-center text-white" style="width: fit-content; font-size: 1.5rem; font-weight: 600; background: black">
+          Wekelijks video speeddates beschikbaar voor singles in Nederland
+        </div>
+        <div class="col-6 col-sm- col-md-9 col-lg-8 mx-auto rounded p-1 my-4 text-center text-white d-sm-none" style=" font-size: 1.5rem; font-weight: 600; background: black">
           Wekelijks video speeddates beschikbaar voor singles in Nederland
         </div>
       </div>
@@ -127,8 +130,8 @@
           </div>
         </div>
       </div>
-      <div class="d-none d-sm-flex justify-content-center d-md-none pt-4">
-        <div class=" my-1" style="width: 12rem;">
+      <div class="d-flex justify-content-center d-md-none pt-2">
+        <div class=" my-1 col-6">
           <div  class=" position-relative mx-2">
             <div onclick="openDropTwo()" style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
               <div class="text-white">Regio</div>
@@ -143,7 +146,7 @@
             </div>
           </div>
         </div>
-        <div class=" my-1" style="width: 12rem;">
+        <div class=" my-1 col-6">
           <div onclick="openDropTwoo()" class=" position-relative mx-2">
             <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
               <div class="text-white">Doelgroep</div>
@@ -159,12 +162,12 @@
           </div>
         </div>
       </div>
-      <div class="d-none d-sm-flex justify-content-center d-md-none pb-4">
-        <div class=" my-1" style="width: 12rem;">
+      <div class="d-flex justify-content-center d-md-none pb-2">
+        <div class=" my-1 col-6">
           <div onmouseleave="openDropFive()" onclick="openDropFive()" class=" position-relative mx-2">
             <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
               <div class="text-white">Leeftid</div>
-              <div class="text-white">&#9660;</div>
+              <div class="text-white">&#9660;</div> 
             </div>
             <div id="Leeftijd1" class="dropdown_menu_2 btn-border bg-white">
               <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
@@ -175,7 +178,7 @@
             </div>
           </div>
         </div>
-        <div class=" my-1" style="width: 12rem;">
+        <div class=" my-1 col-6">
           <div onclick="openDropSev()" class="dropdown_2 position-relative mx-2">
             <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
               <div class="text-white">Opleidingsniveau</div>
@@ -191,11 +194,11 @@
           </div>
         </div>
       </div>
-      <div class="py-4 d-sm-none">
-        <div class=" my-1 mx-auto" style="width: 12rem;">
-          <div  onclick="openDropThree()" class=" position-relative mx-2">
-            <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
-              <div class="text-white">Regio</div>
+      <div class="row py-2 d-none justify-content-center">
+        <div class="col-5 my-1 mx-auto">
+          <div  onclick="openDropThree()" class=" position-relative w-100 mx-2">
+            <div style='background-color: #EE4629;' class="rounded px-2 py-3 d-flex justify-content-between">
+              <div class="text-white">Rego</div>
               <div class="text-white">&#9660;</div>
             </div>
             <div id="regio1" class="dropdown_menu_2 btn-border bg-white">
@@ -207,9 +210,9 @@
             </div>
           </div>
         </div>
-        <div class=" my-1 mx-auto" style="width: 12rem;">
-          <div onclick="openDropThreee()" class=" position-relative mx-2">
-            <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
+        <div class="col-5 my-1 mx-auto">
+          <div onclick="openDropThreee()" class=" position-relative w-100 mx-2">
+            <div style='background-color: #EE4629;' class="rounded px-2 py-3 d-flex justify-content-between">
               <div class="text-white">Doelgroep</div>
               <div class="text-white">&#9660;</div>
             </div>
@@ -222,9 +225,9 @@
             </div>
           </div>
         </div>
-        <div class=" my-1 mx-auto" style="width: 12rem;">
-          <div onclick="openDropSix()" class="dropdown_2 position-relative mx-2">
-            <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
+        <div class="col-5 my-1 mx-auto">
+          <div onclick="openDropSix()" class="dropdown_2 position-relative w-100 mx-2">
+            <div style='background-color: #EE4629;' class="rounded px-2 py-3 d-flex justify-content-between">
               <div class="text-white">Leeftijd</div>
               <div class="text-white">&#9660;</div>
             </div>
@@ -237,9 +240,9 @@
             </div>
           </div>
         </div>
-        <div class=" my-1 mx-auto" style="width: 12rem;">
-          <div onclick="openDropEig()" class=" position-relative mx-2">
-            <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
+        <div class="col-5 my-1 mx-auto">
+          <div onclick="openDropEig()" class=" position-relative w-100 mx-2">
+            <div style='background-color: #EE4629;' class="rounded px-2 py-3 d-flex justify-content-between">
               <div class="text-white">Opleidingsniveau</div>
               <div class="text-white">&#9660;</div>
             </div>
