@@ -26,13 +26,13 @@
                 <div>Veelgestelde vragen</div>
               </div>
               <div class="d-flex align-items-center">
-                <div class="btn-border d-flex mx-2 p-1 dropdown_ position-relative">
+                <div onclick="openFlag()" class="btn-border d-flex mx-2 p-1 position-relative">
                   <img
                   src="flag2.png"
                   style="width: 30px; margin-right: 8px;"
                   />
                   <div>&#9660;</div>
-                  <div class="dropdown_menu">
+                  <div id="flag" class="dropdown_menu">
                     <div class="btn-border d-flex p-1 dropdown_ bg-white">
                       <img
                       src="icons8-great-britain-48.png"
@@ -58,7 +58,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-6 col-sm-8 col-md-8 mx-auto rounded p-1 my-4 text-center text-white" style="font-size: 1.5rem; font-weight: 600; background: black">
+        <div class="col-6 col-sm-8 col-md-9 col-lg-8 mx-auto rounded p-1 my-4 text-center text-white" style="font-size: 1.5rem; font-weight: 600; background: black">
           Wekelijks video speeddates beschikbaar voor singles in Nederland
         </div>
       </div>
@@ -66,13 +66,13 @@
 
     <section class="container-fluid bg-white rounded pb-4">
       <div class="d-md-flex d-none justify-content-center py-4">
-        <div class=" my-1 col-md-" style="width: 12rem;">
-          <div class="dropdown_2 position-relative mx-2">
-            <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
-              <div class="text-white">Regio</div>
+        <div class=" my-1 " style="width: 12rem;">
+          <div class="position-relative mx-2">
+            <div onclick="openDrop()" style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
+              <div class="text-white">Rego</div>
               <div class="text-white">&#9660;</div>
             </div>
-            <div class="dropdown_menu_2 btn-border bg-white">
+            <div id="Regio" class="dropdown_menu_2 btn-border bg-white">
               <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
               <div class="px-2 py-1 text-capitalize">another action</div>
               <div class="px-2 pb-0 text-capitalize">something else here</div>
@@ -81,13 +81,13 @@
             </div>
           </div>
         </div>
-        <div class=" my-1 col-md-" style="width: 12rem;">
-          <div class="dropdown_2 position-relative mx-2">
+        <div class=" my-1" style="width: 12rem;">
+          <div onclick="openDrop2()" class=" position-relative mx-2">
             <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
               <div class="text-white">Doelgroep</div>
               <div class="text-white">&#9660;</div>
             </div>
-            <div class="dropdown_menu_2 btn-border bg-white">
+            <div id="Doelgroep" class="dropdown_menu_2 btn-border bg-white">
               <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
               <div class="px-2 py-1 text-capitalize">another action</div>
               <div class="px-2 pb-0 text-capitalize">something else here</div>
@@ -96,13 +96,13 @@
             </div>
           </div>
         </div>
-        <div class=" my-1 col-md-" style="width: 12rem;">
-          <div class="dropdown_2 position-relative mx-2">
+        <div class=" my-1" style="width: 12rem;">
+          <div onclick="openDropOne()" class="position-relative mx-2">
             <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
               <div class="text-white">Leeftijd</div>
               <div class="text-white">&#9660;</div>
             </div>
-            <div class="dropdown_menu_2 btn-border bg-white">
+            <div id="Leeftijd" class="dropdown_menu_2 btn-border bg-white">
               <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
               <div class="px-2 py-1 text-capitalize">another action</div>
               <div class="px-2 pb-0 text-capitalize">something else here</div>
@@ -111,13 +111,13 @@
             </div>
           </div>
         </div>
-        <div class=" my-1 col-md-" style="width: 12rem;">
-          <div class="dropdown_2 position-relative mx-2">
+        <div class=" my-1" style="width: 12rem;">
+          <div onclick="openDrop4()" class=" position-relative mx-2">
             <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
               <div class="text-white">Opleidingsniveau</div>
               <div class="text-white">&#9660;</div>
             </div>
-            <div class="dropdown_menu_2 btn-border bg-white">
+            <div id="Opleidingsniveau" class="dropdown_menu_2 btn-border bg-white">
               <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
               <div class="px-2 py-1 text-capitalize">another action</div>
               <div class="px-2 pb-0 text-capitalize">something else here</div>
@@ -126,17 +126,15 @@
             </div>
           </div>
         </div>
-     
-
       </div>
       <div class="d-none d-sm-flex justify-content-center d-md-none pt-4">
         <div class=" my-1" style="width: 12rem;">
-          <div class="dropdown_2 position-relative mx-2">
-            <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
+          <div  class=" position-relative mx-2">
+            <div onclick="openDropTwo()" style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
               <div class="text-white">Regio</div>
               <div class="text-white">&#9660;</div>
             </div>
-            <div class="dropdown_menu_2 btn-border bg-white">
+            <div id="regio2" class="dropdown_menu_2 btn-border bg-white">
               <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
               <div class="px-2 py-1 text-capitalize">another action</div>
               <div class="px-2 pb-0 text-capitalize">something else here</div>
@@ -146,12 +144,12 @@
           </div>
         </div>
         <div class=" my-1" style="width: 12rem;">
-          <div class="dropdown_2 position-relative mx-2">
+          <div onclick="openDropTwoo()" class=" position-relative mx-2">
             <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
               <div class="text-white">Doelgroep</div>
               <div class="text-white">&#9660;</div>
             </div>
-            <div class="dropdown_menu_2 btn-border bg-white">
+            <div id="Doelgroep1" class="dropdown_menu_2 btn-border bg-white">
               <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
               <div class="px-2 py-1 text-capitalize">another action</div>
               <div class="px-2 pb-0 text-capitalize">something else here</div>
@@ -163,12 +161,12 @@
       </div>
       <div class="d-none d-sm-flex justify-content-center d-md-none pb-4">
         <div class=" my-1" style="width: 12rem;">
-          <div class="dropdown_2 position-relative mx-2">
+          <div onmouseleave="openDropFive()" onclick="openDropFive()" class=" position-relative mx-2">
             <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
-              <div class="text-white">Leeftijd</div>
+              <div class="text-white">Leeftid</div>
               <div class="text-white">&#9660;</div>
             </div>
-            <div class="dropdown_menu_2 btn-border bg-white">
+            <div id="Leeftijd1" class="dropdown_menu_2 btn-border bg-white">
               <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
               <div class="px-2 py-1 text-capitalize">another action</div>
               <div class="px-2 pb-0 text-capitalize">something else here</div>
@@ -178,12 +176,12 @@
           </div>
         </div>
         <div class=" my-1" style="width: 12rem;">
-          <div class="dropdown_2 position-relative mx-2">
+          <div onclick="openDropSev()" class="dropdown_2 position-relative mx-2">
             <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
               <div class="text-white">Opleidingsniveau</div>
               <div class="text-white">&#9660;</div>
             </div>
-            <div class="dropdown_menu_2 btn-border bg-white">
+            <div id="Opleidingsniveau1" class="dropdown_menu_2 btn-border bg-white">
               <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
               <div class="px-2 py-1 text-capitalize">another action</div>
               <div class="px-2 pb-0 text-capitalize">something else here</div>
@@ -195,12 +193,12 @@
       </div>
       <div class="py-4 d-sm-none">
         <div class=" my-1 mx-auto" style="width: 12rem;">
-          <div class="dropdown_2 position-relative mx-2">
+          <div  onclick="openDropThree()" class=" position-relative mx-2">
             <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
               <div class="text-white">Regio</div>
               <div class="text-white">&#9660;</div>
             </div>
-            <div class="dropdown_menu_2 btn-border bg-white">
+            <div id="regio1" class="dropdown_menu_2 btn-border bg-white">
               <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
               <div class="px-2 py-1 text-capitalize">another action</div>
               <div class="px-2 pb-0 text-capitalize">something else here</div>
@@ -210,12 +208,12 @@
           </div>
         </div>
         <div class=" my-1 mx-auto" style="width: 12rem;">
-          <div class="dropdown_2 position-relative mx-2">
+          <div onclick="openDropThreee()" class=" position-relative mx-2">
             <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
               <div class="text-white">Doelgroep</div>
               <div class="text-white">&#9660;</div>
             </div>
-            <div class="dropdown_menu_2 btn-border bg-white">
+            <div id="Doelgroep2" class="dropdown_menu_2 btn-border bg-white">
               <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
               <div class="px-2 py-1 text-capitalize">another action</div>
               <div class="px-2 pb-0 text-capitalize">something else here</div>
@@ -225,12 +223,12 @@
           </div>
         </div>
         <div class=" my-1 mx-auto" style="width: 12rem;">
-          <div class="dropdown_2 position-relative mx-2">
+          <div onclick="openDropSix()" class="dropdown_2 position-relative mx-2">
             <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
               <div class="text-white">Leeftijd</div>
               <div class="text-white">&#9660;</div>
             </div>
-            <div class="dropdown_menu_2 btn-border bg-white">
+            <div id="Leeftijd2" class="dropdown_menu_2 btn-border bg-white">
               <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
               <div class="px-2 py-1 text-capitalize">another action</div>
               <div class="px-2 pb-0 text-capitalize">something else here</div>
@@ -240,12 +238,12 @@
           </div>
         </div>
         <div class=" my-1 mx-auto" style="width: 12rem;">
-          <div class="dropdown_2 position-relative mx-2">
+          <div onclick="openDropEig()" class=" position-relative mx-2">
             <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
               <div class="text-white">Opleidingsniveau</div>
               <div class="text-white">&#9660;</div>
             </div>
-            <div class="dropdown_menu_2 btn-border bg-white">
+            <div id="Opleidingsniveau2" class="dropdown_menu_2 btn-border bg-white">
               <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
               <div class="px-2 py-1 text-capitalize">another action</div>
               <div class="px-2 pb-0 text-capitalize">something else here</div>
@@ -656,6 +654,58 @@
       function openNav() {
         const para = document.getElementById('p');
         para.classList.toggle("nav_show");
+      }
+      function openFlag() {
+        const para = document.getElementById('flag');
+        para.classList.toggle("dropdown_");
+      }
+      function openDrop() {
+        const para = document.getElementById('Regio');
+        para.classList.toggle("dropdown_2");
+      }
+      function openDropTwo() {
+        const para = document.getElementById('regio2');
+        para.classList.toggle("dropdown_2");
+      }
+      function openDropThree() {
+        const para = document.getElementById('regio1');
+        para.classList.toggle("dropdown_2");
+      }
+      function openDrop2() {
+        const para = document.getElementById('Doelgroep');
+        para.classList.toggle("dropdown_2");
+      }
+      function openDropTwoo() {
+        const para = document.getElementById('Doelgroep1');
+        para.classList.toggle("dropdown_2");
+      }
+      function openDropThreee() {
+        const para = document.getElementById('Doelgroep2');
+        para.classList.toggle("dropdown_2");
+      }
+      function openDropOne() {
+        const para = document.getElementById('Leeftijd');
+        para.classList.toggle("dropdown_2");
+      }
+      function openDropFive() {
+        const para = document.getElementById('Leeftijd1');
+        para.classList.toggle("dropdown_2");
+      }
+      function openDropSix() {
+        const para = document.getElementById('Leeftijd2');
+        para.classList.toggle("dropdown_2");
+      }
+      function openDrop4() {
+        const para = document.getElementById('Opleidingsniveau');
+        para.classList.toggle("dropdown_2");
+      }
+      function openDropSev() {
+        const para = document.getElementById('Opleidingsniveau1');
+        para.classList.toggle("dropdown_2");
+      }
+      function openDropEig() {
+        const para = document.getElementById('Opleidingsniveau2');
+        para.classList.toggle("dropdown_2");
       }
     </script>
   </body>

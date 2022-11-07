@@ -3,6 +3,10 @@ html, body{
 }
 
 .rounded {
+    border-radius: 19px !important;
+}
+
+.rounded {
     cursor: pointer !important;
 }
 
@@ -20,7 +24,7 @@ html, body{
 
 .dropdown_menu {
     position: absolute;
-    bottom: -125%;
+    bottom: -120%;
     right: 0;
     z-index: 1;
     visibility: hidden;
@@ -28,7 +32,7 @@ html, body{
     transition: 0.3s;
 }
 
-.dropdown_:hover .dropdown_menu {
+.dropdown_.dropdown_menu {
     visibility: visible;
     opacity: 1;
     bottom: -115%;
@@ -50,7 +54,7 @@ html, body{
 
 }
 
-.dropdown_2:hover .dropdown_menu_2{
+.dropdown_2.dropdown_menu_2{
     visibility: visible;
     opacity: 1;
     margin-top: 0.1rem;
