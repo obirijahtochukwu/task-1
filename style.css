@@ -3,10 +3,7 @@ html, body{
 }
 
 .rounded {
-    border-radius: 10px !important;
-}
-
-.rounded {
+    border-radius: 19px !important;
     cursor: pointer !important;
 }
 
