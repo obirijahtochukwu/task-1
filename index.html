@@ -14,31 +14,31 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="container mt-5 mb-4">
+    <header class="container-fluid mt-5 mb-4">
       <div class="row">
-        <div class="col-sm-8 col-md-7 col-lg-6 mx-auto">
-          <div class="bg-white rounded p-2">
+        <div class="col-sm-8 col-md-6 col-xl-5 mx-auto">
+          <div style="transition: 0.3s; z-index: 88;" class="bg-white position-relative rounded p-2 mx-2 mx-lg-0">
             <div class="d-flex justify-content-between align-items-center">
-              <div style="font-size: 1.2rem; font-weight: 700">About <img src="icons8-heart-24.png"/> Love</div>
-              <div class="d-lg-flex align-items-center d-none">
+              <div style="font-size: 2rem; display: flex">About <img height="25px" class="mx-1 align-self-center" src="icons8-heart-24.png"/> Love</div>
+              <div class="d-lg-flex align-items-center d-none mx-lg-2">
                 <div>Agenda</div>
-                <div class="mx-2" style="padding: 0.075rem; height: 1.8rem; background-color: rgba(0, 0, 0, 0.2);"></div>
+                <div class="mx-3" style="padding: 0.075rem; height: 1.8rem; background-color: rgba(0, 0, 0, 0.2);"></div>
                 <div>Veelgestelde vragen</div>
               </div>
               <div class="d-flex align-items-center">
-                <div onclick="openFlag()" class="btn-border d-flex mx-2 p-1 position-relative">
+                <div onclick="openFlag()" class="btn-border d-flex align-items-center mx-2 py-1 px-2 position-relative">
                   <img
                   src="flag2.png"
-                  style="width: 30px; margin-right: 8px;"
+                  style="width: 30px; margin-right: 15px;"
                   />
-                  <div>&#9660;</div>
-                  <div id="flag" class="dropdown_menu">
+                  <div style="font-size: 1rem;" class="mx">&#8964;</div>
+                  <div id="flag" class="dropdown_menu w-100">
                     <div class="btn-border d-flex p-1 dropdown_ bg-white">
                       <img
                       src="icons8-great-britain-48.png"
                       style="width: 30px; margin-right: 8px; border-radius: 100%;"
                       />
-                      <div>English</div>
+                      <div>EN</div>
                     </div>
                   </div>
                 </div>
@@ -49,8 +49,8 @@
                 </div>
               </div>
             </div>
-            <div id="p" class="nav_show">
-              <p class="text-center pt-2 pb-0"><span class="px-2">Agende</span> <span class="px-3" style="border-left: 0.1rem solid rgba(0, 0, 0, 0.2);">
+            <div id="p" class="nav_ bg-white w-100 mx-0">
+              <p class="text-center pb-0"><span class="px-2">Agende</span> <span class="px-3" style="border-left: 0.1rem solid rgba(0, 0, 0, 0.2);">
                 Veelgestelde vragen</span></p>
             </div>
           </div>
@@ -58,11 +58,13 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="d-none d-sm-block rounded  col-6 my-4 text-center text-white" style="min-width: fit-content; font-size: 1.5rem; font-weight: 600; background: black">
-          Wekelijks video speeddates beschikbaar voor singles in Nederland
+        <div class="d-none d-sm-block  col-6 col-md-7 ">
+          <div class="w-100 rounded my-4 text-center text-white" style=" font-size: 1.5rem; font-weight: 600; background: rgba(0, 0, 0, 0.7)">
+            Wekelijks vide speeddates beschikbaar voor singles in Nederland
+          </div>
         </div>
-        <div class="col-6 col-sm- col-md-9 col-lg-8 mx-auto rounded p-1 my-4 text-center text-white d-sm-none" style=" font-size: 1.5rem; font-weight: 600; background: black">
-          Wekelijks video speeddates beschikbaar voor singles in Nederland
+        <div class="col-6 col-sm- col-md-9 col-lg-8 mx-auto rounded p-1 my-4 text-center text-white d-sm-none" style=" font-size: 1.5rem; font-weight: 600; background: rgba(0, 0, 0, 0.7)">
+          Wekelijks video speeddates beschikbaar voor singles in Nederlan
         </div>
       </div>
     </header>
@@ -70,144 +72,212 @@
     <section class="container-fluid bg-white rounded pb-4">
       <div class="d-md-flex d-none justify-content-center py-4">
         <div class=" my-1 " style="width: 12rem;">
-          <div class="position-relative mx-2">
-            <div onclick="openDrop()" style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
-              <div class="text-white">Rego</div>
-              <div class="text-white">&#9660;</div>
-            </div>
-            <div id="Regio" class="dropdown_menu_2 btn-border bg-white">
-              <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
-              <div class="px-2 py-1 text-capitalize">another action</div>
-              <div class="px-2 pb-0 text-capitalize">something else here</div>
-              <hr>
-              <div class="px-1 pb-3 pt-0 text-capitalize">seperated link</div>
-            </div>
+          <div class="btn-group w-100">
+            <button
+              type="button"
+              class="btn dropdown-toggle droper"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="background-color: #ee4629; color: white; width:166.36px"
+            >
+              Regio
+            </button>
+            <ul class="dropdown-menu w-100">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class=" my-1 mx-1" style="width: 12rem;">
+          <div class="btn-group w-100">
+            <button
+              type="button"
+              class="btn dropdown-toggle droper"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="background-color: #ee4629; color: white; width:166.36px"
+            >
+              Doelgroep
+            </button>
+            <ul class="dropdown-menu w-100">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
           </div>
         </div>
         <div class=" my-1" style="width: 12rem;">
-          <div onclick="openDrop2()" class=" position-relative mx-2">
-            <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
-              <div class="text-white">Doelgroep</div>
-              <div class="text-white">&#9660;</div>
-            </div>
-            <div id="Doelgroep" class="dropdown_menu_2 btn-border bg-white">
-              <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
-              <div class="px-2 py-1 text-capitalize">another action</div>
-              <div class="px-2 pb-0 text-capitalize">something else here</div>
-              <hr>
-              <div class="px-1 pb-3 pt-0 text-capitalize">seperated link</div>
-            </div>
+          <div class="btn-group w-100">
+            <button
+              type="button"
+              class="btn dropdown-toggle droper"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="background-color: #ee4629; color: white; width:166.36px"
+            >
+              Leeftijd
+            </button>
+            <ul class="dropdown-menu w-100">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
           </div>
         </div>
-        <div class=" my-1" style="width: 12rem;">
-          <div onclick="openDropOne()" class="position-relative mx-2">
-            <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
-              <div class="text-white">Leeftijd</div>
-              <div class="text-white">&#9660;</div>
-            </div>
-            <div id="Leeftijd" class="dropdown_menu_2 btn-border bg-white">
-              <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
-              <div class="px-2 py-1 text-capitalize">another action</div>
-              <div class="px-2 pb-0 text-capitalize">something else here</div>
-              <hr>
-              <div class="px-1 pb-3 pt-0 text-capitalize">seperated link</div>
-            </div>
-          </div>
-        </div>
-        <div class=" my-1" style="width: 12rem;">
-          <div onclick="openDrop4()" class=" position-relative mx-2">
-            <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
-              <div class="text-white">Opleidingsniveau</div>
-              <div class="text-white">&#9660;</div>
-            </div>
-            <div id="Opleidingsniveau" class="dropdown_menu_2 btn-border bg-white">
-              <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
-              <div class="px-2 py-1 text-capitalize">another action</div>
-              <div class="px-2 pb-0 text-capitalize">something else here</div>
-              <hr>
-              <div class="px-1 pb-3 pt-0 text-capitalize">seperated link</div>
-            </div>
+        <div class=" my-1 mx-1" style="width: 12rem;">
+          <div class="btn-group w-100">
+            <button
+              type="button"
+              class="btn dropdown-toggle droper"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="background-color: #ee4629; color: white; width:166.36px"
+            >
+              Opleidingsniveau
+            </button>
+            <ul class="dropdown-menu w-100">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center d-md-none pt-2">
-        <div class=" my-1 col-6">
-          <div  class=" position-relative mx-2">
-            <div onclick="openDropTwo()" style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
-              <div class="text-white">Regio</div>
-              <div class="text-white">&#9660;</div>
-            </div>
-            <div id="regio2" class="dropdown_menu_2 btn-border bg-white">
-              <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
-              <div class="px-2 py-1 text-capitalize">another action</div>
-              <div class="px-2 pb-0 text-capitalize">something else here</div>
-              <hr>
-              <div class="px-1 pb-3 pt-0 text-capitalize">seperated link</div>
-            </div>
+      <div class="row justify-content-center d-md-none pt-2">
+        <div class="co col-sm-2"></div>
+        <div class=" my-1 col-6 col-sm-4">
+          <div class="btn-group w-100">
+            <button
+              type="button"
+              class="btn dropdown-toggle droper"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="background-color: #ee4629; color: white; width:166.36px"
+            >
+              Regio
+            </button>
+            <ul class="dropdown-menu w-100">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
           </div>
         </div>
-        <div class=" my-1 col-6">
-          <div onclick="openDropTwoo()" class=" position-relative mx-2">
-            <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
-              <div class="text-white">Doelgroep</div>
-              <div class="text-white">&#9660;</div>
-            </div>
-            <div id="Doelgroep1" class="dropdown_menu_2 btn-border bg-white">
-              <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
-              <div class="px-2 py-1 text-capitalize">another action</div>
-              <div class="px-2 pb-0 text-capitalize">something else here</div>
-              <hr>
-              <div class="px-1 pb-3 pt-0 text-capitalize">seperated link</div>
-            </div>
+        <div class=" my-1 col-6 col-sm-4">
+          <div class="btn-group w-100">
+            <button
+              type="button"
+              class="btn dropdown-toggle droper"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="background-color: #ee4629; color: white; width:166.36px"
+            >
+              Doelgroep
+            </button>
+            <ul class="dropdown-menu w-100">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
           </div>
         </div>
+        <div class="col- col-sm-2"></div>
+
       </div>
-      <div class="d-flex justify-content-center d-md-none pb-2">
-        <div class=" my-1 col-6">
-          <div onmouseleave="openDropFive()" onclick="openDropFive()" class=" position-relative mx-2">
-            <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
-              <div class="text-white">Leeftid</div>
-              <div class="text-white">&#9660;</div> 
-            </div>
-            <div id="Leeftijd1" class="dropdown_menu_2 btn-border bg-white">
-              <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
-              <div class="px-2 py-1 text-capitalize">another action</div>
-              <div class="px-2 pb-0 text-capitalize">something else here</div>
-              <hr>
-              <div class="px-1 pb-3 pt-0 text-capitalize">seperated link</div>
-            </div>
+      <div class="row justify-content-center d-md-none pb-2">
+        <div class="col- col-sm-2"></div>
+        <div class=" my-1 col-6 col-sm-4">
+          <div class="btn-group w-100">
+            <button
+              type="button"
+              class="btn dropdown-toggle droper"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="background-color: #ee4629; color: white; width:166.36px"
+            >
+              Leeftijd
+            </button>
+            <ul class="dropdown-menu w-100">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
           </div>
         </div>
-        <div class=" my-1 col-6">
-          <div onclick="openDropSev()" class="dropdown_2 position-relative mx-2">
-            <div style='background-color: #EE4629;' class="rounded px-2 py-1 d-flex justify-content-between">
-              <div class="text-white">Opleidingsniveau</div>
-              <div class="text-white">&#9660;</div>
-            </div>
-            <div id="Opleidingsniveau1" class="dropdown_menu_2 btn-border bg-white">
-              <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
-              <div class="px-2 py-1 text-capitalize">another action</div>
-              <div class="px-2 pb-0 text-capitalize">something else here</div>
-              <hr>
-              <div class="px-1 pb-3 pt-0 text-capitalize">seperated link</div>
-            </div>
+        <div class=" my-1 col-6 col-sm-4">
+          <div class="btn-group w-100">
+            <button
+              type="button"
+              class="btn dropdown-toggle droper"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="background-color: #ee4629; color: white; width:166.36px"
+            >
+              Opleidingsniveau
+            </button>
+            <ul class="dropdown-menu w-100">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
           </div>
         </div>
+        <div class="col1 col-sm-2"></div>
       </div>
       <div class="row py-2 d-none justify-content-center">
         <div class="col-5 my-1 mx-auto">
-          <div  onclick="openDropThree()" class=" position-relative w-100 mx-2">
-            <div style='background-color: #EE4629;' class="rounded px-2 py-3 d-flex justify-content-between">
-              <div class="text-white">Rego</div>
-              <div class="text-white">&#9660;</div>
-            </div>
-            <div id="regio1" class="dropdown_menu_2 btn-border bg-white">
-              <div class="px-2 pt-2 pb-1 text-capitalize">action</div>
-              <div class="px-2 py-1 text-capitalize">another action</div>
-              <div class="px-2 pb-0 text-capitalize">something else here</div>
-              <hr>
-              <div class="px-1 pb-3 pt-0 text-capitalize">seperated link</div>
-            </div>
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn dropdown-toggle droper"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="background-color: #ee4629; color: white; width:166.36px"
+            >
+              Regi
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
           </div>
         </div>
         <div class="col-5 my-1 mx-auto">
@@ -563,9 +633,9 @@
 
     <footer class="my-5">
       <div class="container d-md-none d-lg-block mb-3">
-        <div class="row justify-content-center">
+        <div class="row justify-content-around position-relative">
         <div class="col-8 col-lg-3">
-          <div class="rounded h-100 bg-white p-2">
+          <div class="rounded h-100 bg-white p-2 w-xl-75">
             <div class="nav-item" id="matchgarantie"><p class="p-0 text-muted footer_left_para"><i class="bi bi-check2-square infoIcon"></i>Match garantie</p></div>
             <div class="nav-item"><p class="p-0 text-muted footer_left_para"><i class="bi bi-check2-square infoIcon"></i>Snelle service</p></div>
                 
@@ -590,7 +660,7 @@
           </div>
         </div>
         <div class="col-8 col-lg-3">
-          <div class="rounded h-100 bg-white p-2 text-center d-flex justify-content-center align-items-center">
+          <div class="rounded w-xl-75 h-100 bg-white p-2 text-center d-flex justify-content-center align-items-center">
             <div class="">
               <div>Privacybeleid</div>
               <hr>
@@ -600,17 +670,8 @@
           </div>
           </div>
         </div>
-        <div class="justify-self-center mt-5" style="margin-right: 13%;">
-          <div class="container-fluid d-none d-lg-flex flex-column flex-sm-row justify-content-between copyrightsection">
-            <ul class="list-unstyled d-flex">
-                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-              </ul>
-            <p style="font-size: 0.8rem" class="text-dark copyright_section">&copy; Videospeeddate.nl 2022 - Heden | KvK 78122066</p>
-            
-          </div>
-        </div>
+        <p style="font-size: 0.8rem;" class="pos d-none d-lg-block text-dark copyright_section">&copy; Videospeeddate.nl 2022 - Heden | KvK 78122066</p>
+
         </div>
       </div>
 
@@ -642,9 +703,9 @@
           </div>
         </div>
         <div class="col-12 my-3">
-          <div class="rounded h-100 bg-white py-2 text-center d-flex justify-content-around align-items-center">
+          <div class="rounded h-100 bg-white py-1 text-center d-flex justify-content-around align-items-center">
               <div>Privacybeleid</div>
-              <div class="" style="padding: 0.085rem; height: 1.4rem; background-color: rgba(0, 0, 0, 0.2);"></div>
+              <div class="" style="padding: 0.085rem; height: 1.1rem; background-color: rgba(0, 0, 0, 0.2);"></div>
               <div>Algemene Voorwaarden</div>
               <div class="" style="padding: 0.085rem; height: 1.4rem; background-color: rgba(0, 0, 0, 0.2);"></div>
               <div class="pb-1">Sitemap</div>
@@ -653,13 +714,13 @@
         </div>
         
       </div>
-      <div class="container-fluid d-lg-none d-md-flex flex-column flex-sm-row justify-content-between copyrightsection">
+      <div class="container-fluid d-flex flex-column flex-sm-row justify-content-between copyrightsection">
             <ul class="list-unstyled d-flex">
                 <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
                 <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
                 <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
               </ul>
-            <p style="font-size: 0.8rem" class="text-dark copyright_section">&copy; Videospeeddate.nl 2022 - Heden | KvK 78122066</p>
+        <p style="font-size: 0.8rem;" class="text-dark d-lg-none copyright_section">&copy; Videospeeddate.nl 2022 - Heden | KvK 78122066</p>
             
           </div>
     </footer>
@@ -722,5 +783,10 @@
         para.classList.toggle("dropdown_2");
       }
     </script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>

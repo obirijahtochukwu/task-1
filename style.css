@@ -4,7 +4,7 @@ html, body{
 
 .rounded {
     border-radius: 19px !important;
-    cursor: pointer !important;
+    cursor: pointer ;
 }
 
 .btn-border {
@@ -35,9 +35,21 @@ html, body{
     bottom: -115%;
 }
 
-.nav_show {
+.nav_ {
     height: 0;
     overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80%;
+}
+
+.nav_show {
+    padding: 0 16px;
+    transition: 0.2s;
+    height: 2rem;
+    border-radius: 0 0 19px 19px;
 }
 
 .dropdown_menu_2 {
@@ -189,8 +201,25 @@ hr{
    .dropdown-mnu {
        left: -5rem !important;
    }
+   .pos {
+    width: fit-content;
+    position: absolute;
+    right: 4%;
+    bottom: -46%;
+   }
 }
 
+@media only screen and (min-width : 1200px) {
+    .w-xl-75 {
+    width: 80% !important;
+    }
+    .pos {
+        width: fit-content;
+        position: absolute;
+        right: 8%;
+        bottom: -46%;
+       }
+}
 @media only screen and (max-width : 1024px) {
    .nav-menu {
        width: 56%;
