@@ -2,10 +2,13 @@ html,
 body {
   background-image: linear-gradient(to right, #d93a1b, #5a6970);
 }
-
+.pi {
+  z-index: 29;
+  position: absolute;
+  background-color: #5a6970;
+}
 .rounded {
   border-radius: 19px !important;
-  cursor: pointer;
 }
 
 .btn-border {
@@ -31,6 +34,7 @@ body {
 }
 .dexi {
   border-radius: 19px 19px 0 0;
+  background-color: white;
 }
 .dropdown_.dropdown_menu {
   visibility: visible;
@@ -45,7 +49,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  top: 81%;
+  top: 82%;
 }
 
 .nav_show {
@@ -218,7 +222,7 @@ hr {
   .pos {
     width: fit-content;
     position: absolute;
-    right: 4%;
+    right: 3.3%;
     bottom: -46%;
   }
 }
