@@ -69,6 +69,7 @@
                     </div>
                     <div id="flag" class="dropdown_menu mx-0">
                       <div
+                        id="mugu"
                         class="btn-border d-flex py-1 px-2 w-100 align-items-center dropdown_ bg-white"
                       >
                         <img
@@ -996,8 +997,11 @@
       function openNav() {
         const para = document.getElementById("p");
         const par = document.getElementById("pb");
+        const pa = document.getElementById("mugu");
+
         para.classList.toggle("nav_show");
         par.classList.toggle("dexi");
+        pa.classList.toggle("d-none");
       }
       function openFlag() {
         const para = document.getElementById("flag");
