@@ -41,7 +41,27 @@ body {
   opacity: 1;
   bottom: -115%;
 }
-
+@media (min-width: 1900px) {
+  .col-xxl-3 {
+    flex: 0 0 auto !important;
+    width: 28% !important;
+  }
+}
+@media (min-width: 1900px) {
+  .col-xxl-4 {
+    flex: 0 0 auto !important;
+    width: 40% !important;
+  }
+}
+@media (min-width: 1900px) {
+  .col-xl-2 {
+    flex: 0 0 auto !important;
+    width: 18% !important;
+  }
+  .pos {
+    right: 5.7% !important;
+  }
+}
 .nav_ {
   height: 0;
   overflow: hidden;
